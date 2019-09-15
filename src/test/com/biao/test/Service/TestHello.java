@@ -7,6 +7,7 @@ import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.test.annotation.SystemProfileValueSource;
 
 
 /**
@@ -18,7 +19,6 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class TestHello {
 
     private ApplicationContext context;
-
     @Before
     public void init(){
         context = new ClassPathXmlApplicationContext("Beans.xml");
@@ -29,4 +29,10 @@ public class TestHello {
         Hello2 hello =(Hello2)context.getBean("hello2");
         hello.getMessage();
     }
+
+   @Test
+   public void TestJunit(){
+       System.out.println("XXXYYY....");
+   }
+
 }

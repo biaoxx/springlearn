@@ -12,5 +12,9 @@ http://www.springframework.org/schema/context/spring-context-4.2.xsd">
 
     <context:component-scan base-package="com.biao.test"/>
 
-
+    <bean id="hello" class="com.biao.test.Beans.Hello">
+        <property name="message" value="My World!"/>
+    </bean>
+    <bean id="hello2" class="com.biao.test.Beans.Hello2">
+    </bean>
 </beans>
