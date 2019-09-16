@@ -6,6 +6,7 @@
         http://www.springframework.org/schema/beans/spring-beans-3.0.xsd ">
 
 
+<<<<<<< HEAD
     <bean id="demo1"  abstract="true" class="com.biao.test.Beans.Demo1">
 
         <!--
@@ -26,5 +27,9 @@
 
     </bean>
 
+=======
+    <context:component-scan base-package="com.biao.test"/>
+
+>>>>>>> 8c59568e31484f60fec96656364857e46f00db15
 
 </beans>
