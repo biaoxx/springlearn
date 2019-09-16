@@ -7,13 +7,12 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  * 1. 控制反转.
- *
  */
 public class TestHello {
     @Autowired
     Hello hello;
 
-    public void print(){
+    public void print() {
         hello.getMessage();
     }
 
@@ -22,7 +21,7 @@ public class TestHello {
         ApplicationContext context =
                 new ClassPathXmlApplicationContext("Beans.xml");
 
-       TestHello testHello = new TestHello();
-       testHello.print();
+        TestHello testHello = new TestHello();
+        testHello.print();
     }
 }
