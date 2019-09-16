@@ -10,11 +10,26 @@
 http://www.springframework.org/schema/context/spring-context-4.2.xsd">
 
 
+    <!--
+        每次从容器中调用Bean时，都返回一个新的实例，即每次调用getBean()时，相当于执行newXxxBean()
+
+
+    -->
     <context:component-scan base-package="com.biao.test"/>
 
     <bean id="hello" class="com.biao.test.Beans.Hello">
         <property name="message" value="My World!"/>
     </bean>
-    <bean id="hello2" class="com.biao.test.Beans.Hello2">
+
+    <bean id="demo1"  abstract="true" class="com.biao.test.Beans.Demo1">
+        <property name="id" value="1"/>
+        <property name="name" value="张三"/>
+        <property name="age" value="18"/>
+    </bean>
+    <bean id="demo2" class="com.biao.test.Beans.adsbean.People" parent="demo1">
+        <property name="message" value="Hell World"/>
+        <property name="name" value="武则天"/>
+
+
     </bean>
 </beans>

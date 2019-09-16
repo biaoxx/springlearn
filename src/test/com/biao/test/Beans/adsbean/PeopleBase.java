@@ -1,6 +1,6 @@
-package com.biao.test.Beans;
+package com.biao.test.Beans.adsbean;
 
-public class Demo1 {
+public class PeopleBase {
     private int id;
     private String name;
     private int age;

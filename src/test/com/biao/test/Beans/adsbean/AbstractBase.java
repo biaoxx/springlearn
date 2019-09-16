@@ -1,4 +1,4 @@
-package com.biao.test.Beans;
+package com.biao.test.Beans.adsbean;
 
  public abstract class AbstractBase {
     private int age=19;

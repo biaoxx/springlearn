@@ -1,6 +1,6 @@
-package com.biao.test.Beans;
+package com.biao.test.Beans.adsbean;
 
-public class Demo2 extends Demo1 {
+public class People extends PeopleBase {
     private int id;
     private String name;
     private int age;
